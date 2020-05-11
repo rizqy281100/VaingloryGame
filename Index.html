@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Vainglory | The Best Cross-Platform MOBA</title>
+  <link rel="icon" href="img/icon.png">
+  <link rel="stylesheet" type="text/css" href="css/Style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.17.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.17.0/css/mdb.min.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body ng-app="">
+
+  <header>
+    <!-- Navigation Bar Section -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top navbar-dark smooth-scroll list-unstyled">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <h2 class="font-weight-bold text-uppercase small mb-4" style="padding-top: 20px;">Vainglory</h2>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto" style="padding-top: 20px;">
+            <li class="nav-item">
+              <a class="nav-link" href="#roles">
+                <p style="color: #ecd19a" class="font-weight-bold text-center text-uppercase small">Position</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#video">
+                <p style="color: #ecd19a" class="font-weight-bold text-center text-uppercase small mb-4">Gameplay</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#download">
+                <p style="color: #ecd19a" class="font-weight-bold text-center text-uppercase small mb-4">Download</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">
+                <p style="color: #ecd19a" class="font-weight-bold text-center text-uppercase small mb-4">Team</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#form">
+                <p style="color: #ecd19a" class="font-weight-bold text-center text-uppercase small mb-4">Contact Us</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End of Navigation Bar Section -->
+
+    <!-- Header Background Section -->
+    <div class="view jarallax" style="height: 100vh;" id="home">
+      <img class="jarallax-img" src="img/Red Lantern Flicker.jpeg" alt="Red Lantern Flicker">
+    </div>
+    <!-- End of Header Background Section -->
+  </header>
+
+  <!-- Dark Background -->
+  <div class="container-fluid bg-dark" style="padding-bottom: 20px;">
+
+    <!-- Divider -->
+    <div class="Divider">
+      <hr class="Divider-rule">
+    </div>
+    <!-- End of Divider -->
+
+    <!-- Game Position Section -->
+    <div class="my-5" id="roles">
+      <div id="json"></div>
+    </div>
+    <!-- End of Game Position Section -->
+
+    <!-- Divider -->
+    <div class="Divider">
+      <hr class="Divider-rule">
+    </div>
+    <!-- End of Divider -->
+
+    <!-- Gameplay Video Section -->
+    <div class="container z-depth-1 my-5 py-5" id="video">
+      <section>
+        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                <iframe id="player" class="embed-responsive-item" src="https://www.youtube.com/embed/O1CmGxf4NyI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen="" __idm_id__="95016961"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="font-weight-bold text-center text-uppercase small mb-4">Gameplay Video</h2>
+        <h2 class="font-weight-bold text-center pb-2">Vainglory Enters Cross-Platform Alpha</h2>
+        <p class="lead text-center white-text text-muted pt-2 mb-5">Welcome to the Vainglory PC and Mac alpha release. Vainglory is a cross-platform MOBA with the strategic depth and mechanical skill you’d expect from a PC title, but playable with your friends anywhere, on any device. In this video, we’re going to quickly cover some of the ways Vainglory’s design differs from the MOBAs you may already know.</p>
+
+        <div class="row">
+          <div class="col-md-8 mx-auto mb-4">
+            <div class="view z-depth-1 rounded">
+              <img class="rounded img-fluid" src="img/Dr. Franken Flicker.jpeg" alt="Video title">
+              <div class="mask flex-center rgba-white-light">
+                <a id="play" class="btn-floating btn-danger btn-lg waves-effect waves-light" data-toggle="modal" data-target="#modal1"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End of Gameplay Video Section -->
+
+    <!-- Divider -->
+    <div class="Divider">
+      <hr class="Divider-rule">
+    </div>
+    <!-- End of Divider -->
+
+    <!-- Game Download Links Section -->
+    <div class="container my-5" id="download">
+      <section class="dark-grey-text text-center">
+        <h2 class="font-weight-bold mb-4 pb-2">Choose Your Side</h2>
+        <p class="text-muted white-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur veniam.</p>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="view overlay rounded z-depth-1">
+              <img src="img/Oni Kensei.jpeg" class="img-fluid" alt="Oni Kensei">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+              <h2 class="font-weight-bold mt-1 mb-3">Android Version</h2>
+              <p class="text-muted white-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
+              <h2 class="btn btn-red btn-sm btn-rounded"><a href="https://play.google.com/store/apps/details?id=com.superevilmegacorp.game&hl=en_US" style="color: white;">PLAY STORE</a></h2>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="view overlay rounded z-depth-1">
+              <img src="img/Stormguard Queen.jpg" class="img-fluid" alt="Stormguard Queen">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+              <h2 class="font-weight-bold mt-1 mb-3">PC/Mac Version</h2>
+              <p class="text-muted white-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
+              <h2 class="btn btn-red btn-sm btn-rounded"><a href="https://store.steampowered.com/app/1025580/Vainglory/" style="color: white;">STEAM</a></h2>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="view overlay rounded z-depth-1">
+              <img src="img/Masquarade Magnus.jpeg" class="img-fluid" alt="Masquarade Magnus">
+              <a>
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+            <div class="px-3 pt-3 mx-1 mt-1 pb-0">
+              <h2 class="font-weight-bold mt-1 mb-3">IOS Version</h2>
+              <p class="text-muted white-text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae.</p>
+              <h2 class="btn btn-red btn-sm btn-rounded"><a href="https://apps.apple.com/us/app/vainglory/id671464704" style="color: white;">APP STORE</a></h2>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+    <!-- End of Game Download Links Section -->
+
+    <!-- Divider -->
+    <div class="Divider">
+      <hr class="Divider-rule">
+    </div>
+    <!-- End of Divider -->
+
+    <!-- Game Developer Team Section -->
+    <div class="my-5" id="team">
+      <div id="dev"></div>
+    </div>
+    <!-- End of Game Developer Team Section -->
+
+    <!-- Divider -->
+    <div class="Divider">
+      <hr class="Divider-rule">
+    </div>
+    <!-- End of Divider -->
+
+    <!-- Google Map and Form Section -->
+    <div class="container mt-5" id="form">
+      <section class="dark-grey-text mb-5">
+        <h2 class="font-weight-bold text-center mb-4">Contact Us</h2>
+        <p class="text-center w-responsive white-text mx-auto pb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
+          eum porro a pariatur veniam.</p>
+
+        <div class="row">
+          <div class="col-lg-5 mb-lg-0 pb-lg-3 mb-4">
+
+            <!-- Form With Header -->
+            <div class="card">
+              <!-- form contact -->
+              <form name="myForm">
+                <div class="container-fluid bg-dark" style="padding-top: 20px;" id="roles">
+                  <div class="card-body">
+                    <div class="form-header red">
+                      <h2 class="mt-2"><i class="fas fa-envelope"></i>Write to Us:</h2>
+                    </div>
+                    <h2 class="">We'll Write Rarely, but Only the Best Content.</h2>
+
+                    <div class="md-form">
+                      <i class="fas fa-user prefix white-text"></i>
+                      <input type="text" id="name" name="name" class="form-control" ng-model="name" required>
+                      <label for="form-name">Your Name</label>
+                      <span style="color: red" ng-show="myForm.name.$dirty && myForm.name.$invalid || myForm.name.$touched">
+                        <span ng-show="myForm.name.$error.required">Name is Required.</span>
+                      </span>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-envelope prefix white-text"></i>
+                      <input type="email" id="email" name="email" class="form-control" ng-model="email" required>
+                      <label for="form-email">Your Email</label>
+                      <span style="color: red" ng-show="myForm.email.$dirty && myForm.email.$invalid || myForm.email.$touched">
+                        <span ng-show="myForm.email.$error.required">Email is Required.</span>
+                        <span ng-show="myForm.email.$error.email">Invalid Email Address.</span>
+                      </span>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-tag prefix white-text"></i>
+                      <input type="text" id="subject" name="subject" class="form-control" ng-model="subject" required>
+                      <label for="form-Subject">Subject</label>
+                      <span style="color: red" ng-show="myForm.subject.$dirty && myForm.subject.$invalid || myForm.subject.$touched">
+                        <span ng-show="myForm.subject.$error.required">Please Input Subject</span>
+                      </span>
+                    </div>
+
+                    <div class="md-form">
+                      <i class="fas fa-pencil-alt prefix white-text"></i>
+                      <textarea id="text" name="text" class="form-control md-textarea" rows="3" ng-model="text" required></textarea>
+                      <label for="form-text">Send Message</label>
+                      <span style="color:red" ng-show="myForm.text.$dirty && myForm.text.$invalid || myForm.text.$touched">
+                        <span ng-show="myForm.text.$error.required">Give Us Feedback Please</span>
+                      </span>
+                    </div>
+
+                    <div class="text-center">
+                      <button class="btn btn-red waves-effect waves-light btn-rounded" onclick="validation()">
+                        <h2>Submit</h2>
+                      </button>
+                    </div>
+
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- End of Form With Header -->
+          </div>
+
+          <!-- Google Map -->
+          <div class="col-lg-7">
+            <div id="map-container-section" class="z-depth-1-half map-container-section mb-4" style="height: 400px">
+              <iframe src="https://maps.google.com/maps?q=Moscow&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            </div>
+
+            <div class="row text-center">
+
+              <div class="col-md-4">
+                <a class="btn-floating red waves-effect waves-light">
+                  <i class="fas fa-map-marker-alt"></i>
+                </a>
+                <p class="yellow-text">Moscow, 103274</p>
+                <p class="yellow-text mb-md-0">Russia</p>
+              </div>
+
+              <div class="col-md-4">
+                <a class="btn-floating red waves-effect waves-light">
+                  <i class="fas fa-phone"></i>
+                </a>
+                <p class="yellow-text">+7-951-5555-841</p>
+                <p class="mb-md-0 yellow-text">Mon - Fri, 8:00-22:00</p>
+              </div>
+
+              <div class="col-md-4">
+                <a class="btn-floating red waves-effect waves-light">
+                  <i class="fas fa-envelope"></i>
+                </a>
+                <p class="yellow-text">pootin@gmail.com</p>
+                <p class="mb-0 yellow-text">blyat@slav.com</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- End of Google Maps and Form Section -->
+
+    <!-- Divider -->
+    <div class="Divider">
+      <hr class="Divider-rule">
+    </div>
+    <!-- End of Divider -->
+
+    <!-- Footer Section -->
+    <footer class="page-footer font-small bg-dark">
+      <div class="container my-5">
+        <section class="px-md-5 mx-md-5 py-5 text-center white-text rounded">
+          <h2>COPYRIGHT © 2020 BY IKI</h2>
+        </section>
+      </div>
+    </footer>
+    <!-- End of Footer Section -->
+  </div>
+  <!-- End of Dark Background -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.17.0/js/jquery.min.js"></script>
+  <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.17.0/js/popper.min.js"></script>
+  <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.17.0/js/mdb.min.js"></script>
+  <script type="text/javascript" src="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/js/plugins/mdb-plugins-gathered.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://mdbootstrap.com/api/snippets/static/download/MDB-Pro_4.17.0/js/bootstrap.min.js"></script>
+  <!--   <script src="js/bootstrap.mis.js"></script> -->
+  <!-- Form Validation -->
+  <!--   <script src="http://code.angularjs.org/1.2.6/angular.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script type="text/javascript" src="js/validation.js"></script>
+  <!-- JSON Load Data -->
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/dev.js"></script>
+
+  <!-- <script>
+    var validationApp = angular.module('validationApp',[]);
+    validationApp.controller('mainController', function($scope) {
+      $scope.submitForm = function(isValid) {
+        if(isValid){
+          alert('Thanks for your submition');
+        }
+      };
+    });
+  </script> -->
+
+</body>
+
+</html>

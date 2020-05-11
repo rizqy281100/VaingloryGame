@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  color: #ecd19a;
+  font-family: 'Cinzel Decorative', sans-serif;
+}
+
+
+/* NavBar */
+.navbar-custom {
+  background: linear-gradient(rgba(34, 34, 34, 0.95), rgba(34, 34, 34, 0.75));
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+/* NavBar */
+
+/* Form Section */
+.map-container-section {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.map-container-section iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* End of Form Section */
+
+/* Divider Section */
+.Divider {
+  height: 55px;
+  margin: -18px -15px;
+  position: relative;
+  z-index: 1;
+}
+
+.Divider:before {
+  left: 0;
+  margin-right: 82px;
+  right: 50%;
+  background: url(../img/divider-sprite.png) repeat-x 50% 0;
+  content: "";
+  height: 55px;
+  position: absolute;
+  top: 0;
+}
+
+.Divider:after {
+  left: 50%;
+  margin-left: 82px;
+  right: 0;
+  background: url(../img/divider-sprite.png) repeat-x 50% 0;
+  content: "";
+  height: 55px;
+  position: absolute;
+  top: 0;
+}
+
+.Divider-rule {
+  background: url(../img/divider-sprite.png) repeat-x 50% 100%;
+  border: 0;
+  height: 55px;
+  left: 50%;
+  margin: 0 0 0 -82px;
+  position: absolute;
+  top: 5px;
+  width: 164px;
+}
+/* End of Divider Section */
+
+/* JSON Card View Section */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.6rem;
+/* End of JSON Card View Section */
